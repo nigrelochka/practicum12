@@ -5,6 +5,9 @@ def mod_number(a, b):
     аргументы:
         a : делимое (натуральное число)
         b : делитель (натуральное число)
+
+    возвращает:
+        остаток от деления a на b
     """
     if a < b:
         return a
@@ -12,5 +15,4 @@ def mod_number(a, b):
     return mod_number(a - b, b)
 
 
-if __name__ == "__main__":
-    print(mod_number(10, 3))
+print(mod_number(10, 3))
