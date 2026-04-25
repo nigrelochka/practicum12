@@ -6,6 +6,8 @@ def progress(a1, r, n):
         a1 : первый член прогрессии
         r : разность прогрессии
         n : номер члена прогрессии
+    возвращает:
+        значение энного члена прогрессии
 
     формула: an = a1 + (n-1) * r
     """
@@ -15,5 +17,4 @@ def progress(a1, r, n):
     return progress(a1, r, n - 1) + r
 
 
-if __name__ == "__main__":
-    print(progress(2, 3, 1))
+print(progress(2, 3, 1))
