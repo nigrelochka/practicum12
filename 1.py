@@ -8,5 +8,4 @@ def pownum(a, n):
     return a * pownum(a, n - 1)
 
 
-if __name__ == "__main__":
-    print(pownum(2, 3))
+print(pownum(2, 3))
