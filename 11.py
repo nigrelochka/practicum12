@@ -14,5 +14,4 @@ def ind_maxlist(a):
         return max_index_rest + 1
 
 
-if __name__ == "__main__":
-    print(ind_maxlist([5]))
+print(ind_maxlist([5]))
