@@ -18,5 +18,4 @@ def sum_progress(a1, r, n):
     return sum_progress(a1, r, n - 1) + (a1 + (n - 1) * r)
 
 
-if __name__ == "__main__":
-    print(sum_progress(2, 3, 1))
+print(sum_progress(2, 3, 1))
