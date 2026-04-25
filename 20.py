@@ -7,6 +7,10 @@ def comp(a, b, m, n):
         b : вторая строка
         m : длина первой строки (кол-во символов)
         n : длина второй строки (кол-во символов)
+
+    
+    возвращает:
+        длина наибольшей общей подпоследовательности
     """
     if m == 0 or n == 0:
         return 0
@@ -18,8 +22,5 @@ def comp(a, b, m, n):
     return max(comp(a, b, m - 1, n), comp(a, b, m, n - 1))
 
 
-# Примеры использования
-if __name__ == "__main__":
-    # Тестовые примеры
-    a, b = "ABCDGH", "AEDFHR"
-    print(f"LCS('{a}', '{b}') = {comp(a, b, len(a), len(b))}")
+a, b = "ABCDGH", "AEDFHR"
+print(f"LCS('{a}', '{b}') = {comp(a, b, len(a), len(b))}")
